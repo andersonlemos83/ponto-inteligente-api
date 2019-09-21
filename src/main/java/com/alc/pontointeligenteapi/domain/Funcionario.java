@@ -72,13 +72,13 @@ public class Funcionario implements Serializable {
         return valorHora;
     }
 
+    public void setValorHora(BigDecimal valorHora) {
+        this.valorHora = valorHora;
+    }
+
     @Transient
     public Optional<BigDecimal> getValorHoraOpt() {
         return Optional.ofNullable(valorHora);
-    }
-
-    public void setValorHora(BigDecimal valorHora) {
-        this.valorHora = valorHora;
     }
 
     @Column(name = "qtd_horas_trabalho_dia", nullable = true)
@@ -86,13 +86,13 @@ public class Funcionario implements Serializable {
         return qtdHorasTrabalhoDia;
     }
 
+    public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
+        this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
+    }
+
     @Transient
     public Optional<Float> getQtdHorasTrabalhoDiaOpt() {
         return Optional.ofNullable(qtdHorasTrabalhoDia);
-    }
-
-    public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
-        this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
     }
 
     @Column(name = "qtd_horas_almoco", nullable = true)
@@ -100,13 +100,13 @@ public class Funcionario implements Serializable {
         return qtdHorasAlmoco;
     }
 
+    public void setQtdHorasAlmoco(Float qtdHorasAlmoco) {
+        this.qtdHorasAlmoco = qtdHorasAlmoco;
+    }
+
     @Transient
     public Optional<Float> getQtdHorasAlmocoOpt() {
         return Optional.ofNullable(qtdHorasAlmoco);
-    }
-
-    public void setQtdHorasAlmoco(Float qtdHorasAlmoco) {
-        this.qtdHorasAlmoco = qtdHorasAlmoco;
     }
 
     @Enumerated(EnumType.STRING)
