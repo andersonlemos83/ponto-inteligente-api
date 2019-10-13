@@ -20,4 +20,15 @@ public class PasswordUtil {
         BCryptPasswordEncoder bCryptEncoder = new BCryptPasswordEncoder();
         return bCryptEncoder.encode(senha);
     }
+
+    public static void main(String[] args){
+        String s1 = PasswordUtil.gerarBCrypt("1");
+        String s2 = PasswordUtil.gerarBCrypt("12345");
+        String s3 = PasswordUtil.gerarBCrypt("123456");
+
+        System.out.println("1 - " + s1);
+        System.out.println("12345 - " + s2);
+        System.out.println("123456 - " + s3);
+
+    }
 }
